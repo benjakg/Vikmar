@@ -5,3 +5,50 @@ header
 {
    margin-left: -20px;
 }
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #555555;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .dropdown-menu-left {
+    right: auto;
+    left: 0;
+  }
+  
+  .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+ .m-0{
+    color: white;
+ }
+ .mb-5{
+    color: orangered;
+ }
+ .nav-link
+ {
+ color: orange;
+ }
+ p{
+   padding-left: 30px;
+   color: orange;
+
+ }
+ h1{
+   padding-left: 30px;
+   color: orange;
+ }
+
