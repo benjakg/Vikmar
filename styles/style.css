@@ -1,9 +1,22 @@
 *{
     background-color: black;
 }
-header
-{
-   margin-left: -20px;
+main{
+  background-color: black;
+}
+.panellog{
+  margin-left: -20px;
+}
+.logos{
+  text-align: right;
+}
+.men{
+  text-align: left;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
 }
 .dropdown-menu {
     position: absolute;
@@ -16,12 +29,12 @@ header
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
     font-size: 1rem;
-    color: #555555;
+    color: #e28204;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #000000;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(116, 71, 71, 0.15);
   }
   .dropdown-menu-left {
     right: auto;
@@ -33,7 +46,7 @@ header
     left: auto;
   }
  .m-0{
-    color: white;
+    color: rgb(0, 0, 0);
  }
  .mb-5{
     color: orangered;

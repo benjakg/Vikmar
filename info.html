@@ -11,46 +11,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <header>
+      
+    <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-xs-12">
-                    <a href="index.html"><img src="/img/logoPanelMejorado.png" alt="" width="300"></a>
+                <div class="col-lg-3 col-md-3 col-xs-12 panellog">
+                    <a href="index.html"><img src="img/logoPanelMejorado.png" alt="" width="300"></a>
                 </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
-                    <h1></h1>
+                <div class="col-lg-9 col-md-9 col-xs-12 toolbar">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="container-fluid p-0 nav-bar men">
+                                <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3" >
+                                    
+                                    <button type="button" class="navbar-toggler" >
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                        <div class="navbar-nav ml-auto p-4">
+                                          <a href="index.html" class="nav-item nav-link">Inicio</a>
+                                            <a href="menu.html" class="nav-item nav-link">Platos</a>
+                                        
+                                            <a href="info.html" class="nav-item nav-link">Sobre nosotros</a>
+                                           
+                                            <a href="#redesSoc" class="nav-item nav-link">Redes Sociales</a>
+                                         
+                                        </div>
+                                    </div>
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-4 logos">
+                            <a href="index.html"><img src="img/Logo.jpg" alt="" width="80"></a>
+                        </div>
+                    </div>
+                    
+                   
                 </div>
+   
+                    
+                
             </div>
         </div>
-        <!-- Menu -->
-        <div class="container-fluid p-0 nav-bar">
-          <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-              
-              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                  <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link">Inicio</a>
-                      <a href="menu.html" class="nav-item nav-link">Platos</a>
-                      <a href="info.html" class="dropdown-item">Sobre nosotros</a>
-                      
-                     
-                      <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pedido</a>
-                          <div class="dropdown-menu text-capitalize">
-                              <a href="reservation.html" class="dropdown-item">¡Pide ya!</a>
-                              <a href="info.html" class="dropdown-item">Sobre nosotros</a>
-                          </div>
-                      </div>
-                      <a href="contacto.html" class="nav-item nav-link">Contacto</a>
-                  </div>
-              </div>
-          </nav>
-      </div>
-  <h1>Nuestro Compromiso</h1>
-   <p >Creemos en la importancia de los ingredientes de calidad y en el respeto por las técnicas culinarias tradicionales. Cada pollo que servimos es cuidadosamente seleccionado y preparado con especias y marinados secretos que realzan su sabor. Asamos nuestros pollos lentamente sobre leña de la mejor calidad, lo que les da ese toque ahumado y crujiente que tanto te gusta.</p>
-  <!-- Footer Start -->
+    </header>
+    <div>
+        <main>
+            <h1>Nuestro Compromiso</h1>
+            <p >Creemos en la importancia de los ingredientes de calidad y en el respeto por las técnicas culinarias tradicionales. Cada pollo que servimos es cuidadosamente seleccionado y preparado con especias y marinados secretos que realzan su sabor. Asamos nuestros pollos lentamente sobre leña de la mejor calidad, lo que les da ese toque ahumado y crujiente que tanto te gusta.</p>
+          
+
+        </main>
+   <!-- Footer Start -->
   <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
       <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
           <div class="col-lg-3 col-md-6 mb-5">
@@ -116,13 +128,13 @@
   <script src="js/main.js"></script>
 
 
-      </header>
+    
 
 
 
 
 
-
+  <script src="java/scriptsx.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
