@@ -22,22 +22,17 @@
                         <div class="col-8">
                             <div class="container-fluid p-0 nav-bar men">
                                 <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3" >
-                                    
-                                    <button type="button" class="navbar-toggler" >
+                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                                         <span class="navbar-toggler-icon"></span>
                                     </button>
                                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                         <div class="navbar-nav ml-auto p-4">
                                           <a href="index.html" class="nav-item nav-link">Inicio</a>
                                             <a href="menu.html" class="nav-item nav-link">Platos</a>
-                                        
                                             <a href="info.html" class="nav-item nav-link">Sobre nosotros</a>
-                                           
                                             <a href="#redesSoc" class="nav-item nav-link">Redes Sociales</a>
-                                         
                                         </div>
                                     </div>
-                                    
                                 </nav>
                             </div>
                         </div>
@@ -45,30 +40,18 @@
                             <a href="index.html"><img src="img/Logo.jpg" alt="" width="80"></a>
                         </div>
                     </div>
-                    
-                   
                 </div>
-   
-                    
-                
             </div>
         </div>
     </header>
     <div>
        <!-- Menu header -->
-    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
-      <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-          <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Menu</h1>
-          <div class="d-inline-flex mb-lg-5">
-              <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
-              <p class="m-0 text-white px-2">/</p>
-              <p class="m-0 text-white">Menu</p>
-          </div>
-      </div>
-  </div>
+       <div class="menu-header">
+        <img src="img/panelComidas.jpg" alt="Menu Background" class="menu-background">
+    </div>
   <main>
-
     <!-- Menu Start -->
+    <div class="fondo-platos">
     <div class="container-fluid pt-5">
       <div class="container">
           <div class="section-title">
@@ -80,87 +63,156 @@
                   <div class="row align-items-center mb-5">
                       <div class="col-4 col-sm-3">
                           <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoEconomigoFoto.jpg" alt="">
-                          <h5 class="menu-price">11 Bs.</h5>
-                          <h5 class="menu-price">16 Bs. Con guarrnición</h5>
+                          <h5 class="menu-price">16 Bs.</h5>
                       </div>
                       <div class="col-8 col-sm-9">
                           <h4>Económico</h4>
-                          <p class="m-0">Pollo económico: jugoso y bien sazonado, acompañado de guarniciones clásicas. Una opción deliciosa y accesible para disfrutar en cualquier ocasión.</p>
+                          <p class="m-0"> 1 Presa de Pollo (a elección Pierna, Ala o Muslo)
+                            Papa o Arroz Personal
+                            </p>
                       </div>
+                      <div class="d-flex align-items-center mt-3"> 
+                        <button class="btn btn-secondary" onclick="decrement('econ')">-</button> 
+                        <span id="econ-count" class="mx-3">0</span> 
+                        <button class="btn btn-primary" onclick="increment('econ')">+</button> 
+                    </div>
                   </div>
                   <div class="row align-items-center mb-5">
                       <div class="col-4 col-sm-3">
                           <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoCuartoFoto.jpg" alt="">
-                          <h5 class="menu-price">21 Bs.</h5>
-                          <h5 class="menu-price">26 Bs. Con guarnición</h5>
+                          <h5 class="menu-price">26 Bs.</h5>
                       </div>
                       <div class="col-8 col-sm-9">
                           <h4>Cuarto</h4>
-                          <p class="m-0">Una porción jugosa y perfectamente sazonada, servida con guarniciones a tu elección. ¡Sabor irresistible en cada bocado!</p>
+                          <p class="m-0">1/4 Pollo (Muslo con Pierna o Pechuga con Ala)
+                            Papa o Arroz Personal
+                            </p>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <button class="btn btn-secondary" onclick="decrement('cuarto')">-</button>
+                        <span id="cuarto-count" class="mx-3">0</span>
+                        <button class="btn btn-primary" onclick="increment('cuarto')">+</button>
                       </div>
                   </div>
                   <div class="row align-items-center mb-5">
                       <div class="col-4 col-sm-3">
                           <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoMedioFoto.jpg" alt="">
-                          <h5 class="menu-price">37 Bs.</h5>
-                          <h5 class="menu-price">49 Bs. Con 3 guarniciones</h5>
+                          <h5 class="menu-price">49 Bs. </h5>
                       </div>
                       <div class="col-8 col-sm-9">
                           <h4>Medio</h4>
-                          <p class="m-0">Medio pollo, perfectamente cocido, con un sabor auténtico y jugoso, acompañado de guarniciones frescas y bien equilibradas.</p>
+                          <p class="m-0"> 4 Presas de Pollo
+                             Papa o Arroz Mediano</p>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <button class="btn btn-secondary" onclick="decrement('medio')">-</button>
+                        <span id="medio-count" class="mx-3">0</span>
+                        <button class="btn btn-primary" onclick="increment('medio')">+</button>
                       </div>
                   </div>
                   <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
-                      <!-- Colocar la imagen correcta de pollo entero -->
-                        <imºg class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoMedioFoto.jpg" alt="">
-                        <h5 class="menu-price">65 Bs.</h5>
-                        <h5 class="menu-price">92 Bs. Con 3 guarniciones</h5>
+                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoEnteroFoto.jpg" alt="">
+                        <h5 class="menu-price">92 Bs. </h5>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Entero</h4>
-                        <p class="m-0">Pollo de calidad superior, cocido de manera uniforme para garantizar su jugosidad y sabor. Ideal para quienes buscan una opción completa y satisfactoria.</p>
+                        <p class="m-0"> 8 Presas de Pollo
+                            Papa o Arroz Mediano
+                        Gaseosa Mediana</p>
                     </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <button class="btn btn-secondary" onclick="decrement('entero')">-</button>
+                        <span id="entero-count" class="mx-3">0</span>
+                        <button class="btn btn-primary" onclick="increment('entero')">+</button>
+                      </div>
                 </div>
               </div>
               <div class="col-lg-6">
                   <h1 class="mb-5">Especiales</h1>
                   <div class="row align-items-center mb-5">
                       <div class="col-4 col-sm-3">
-                          <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                          <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoCostillaCerdo.jpg" alt="">
                           <h5 class="menu-price">25 Bs.</h5>
                       </div>
                       <div class="col-8 col-sm-9">
                           <h4>Costilla de cerdo (Personal)</h4>
                           <p class="m-0">3 Costillas. Mote, papa cocida o 2 guarniciones a elección</p>
                       </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <button class="btn btn-secondary" onclick="decrement('costilla-personal')">-</button>
+                        <span id="costilla-personal-count" class="mx-3">0</span>
+                        <button class="btn btn-primary" onclick="increment('costilla-personal')">+</button>
+                      </div>
                   </div>
                   <div class="row align-items-center mb-5">
                       <div class="col-4 col-sm-3">
-                          <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                          <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoCostillaCerdoMedio.jpg" alt="">
                           <h5 class="menu-price">45 Bs.</h5>
                       </div>
                       <div class="col-8 col-sm-9">
                           <h4>Costilla de cerdo (Medio)</h4>
                           <p class="m-0">5 Costillas. Mote, papa cocida o 2 guarniciones a elección</p>
                       </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <button class="btn btn-secondary" onclick="decrement('costilla-medio')">-</button>
+                        <span id="costilla-medio-count" class="mx-3">0</span>
+                        <button class="btn btn-primary" onclick="increment('costilla-medio')">+</button>
+                      </div> 
                   </div>
                   <div class="row align-items-center mb-5">
                       <div class="col-4 col-sm-3">
-                          <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                          <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/platoCostillaCerdoEntero.jpg" alt="">
                           <h5 class="menu-price">85 Bs.</h5>
                       </div>
                       <div class="col-8 col-sm-9">
                           <h4>Costillas de cerdo (Entero)</h4>
                           <p class="m-0">10 Costillas. Mote, papa cocida o 2 guarniciones a elección</p>
                       </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <button class="btn btn-secondary" onclick="decrement('costilla-entero')">-</button>
+                        <span id="costilla-entero-count" class="mx-3">0</span>
+                        <button class="btn btn-primary" onclick="increment('costilla-entero')">+</button>
+                      </div>
                   </div>
               </div>
           </div>
       </div>
+      <div class="text-center mt-5">
+        <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#purchaseSummaryModal" onclick="finalizePurchase()">Finalizar compra</button>
+</div>
+//modal/*//
+      <div class="modal fade" id="purchaseSummaryModal" tabindex="-1" role="dialog" aria-labelledby="purchaseSummaryModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="purchaseSummaryModalLabel">Resumen de la compra</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí se mostrará el resumen de la compra -->
+              <div id="purchaseSummaryContent"></div>
+              <!-- Selección de sucursal --> <div class="form-group">
+                 <label for="branchSelect">Selecciona la sucursal:</label> <select class="form-control" 
+                 id="branchSelect"> <option value="sucursal1">Av. América, acera sur, esquina Manchay Puito.</option> 
+                 <option value="sucursal2"> Av. Dorbigny, entre c. Cobija y Av. Beijing</option> 
+                </select>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" onclick="confirmPurchase()">Confirmar compra</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
-      
+</div>
+
 </main>
+<footer>
   <!-- Menu End -->
 
 
@@ -169,18 +221,18 @@
       <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
           <div class="col-lg-3 col-md-6 mb-5">
               <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contactanos</h4>
-              <p><i class="fa fa-map-marker-alt mr-2"></i>Calle</p>
-              <p><i class="fa fa-phone-alt mr-2"></i>Numero</p>
-              <p class="m-0"><i class="fa fa-envelope mr-2"></i>Correo</p>
+              <p><i class="fa fa-map-marker-alt mr-2"></i>Av. América, acera sur, esquina Manchay Puito.</p>
+              <p><i class="fa fa-map-marker-alt mr-2"></i>Av. Dorbigny, entre c. Cobija y Av. Beijing</p>
+              <p><i class="fa fa-phone-alt mr-2"></i>4553495</p>
+              <p class=""><i class="fa fa-envelope mr-2"></i>pollosvikmar@gmail.com</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
               <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">¡Siguenos!</h4>
              
               <div class="d-flex justify-content-start">
-                  <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                  
-                  <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                  <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://www.tiktok.com/@pollos_vikmarr"><i class="fab fa-tiktok"></i></a>
+                  <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://www.facebook.com/profile.php?id=100041166522149&locale=el_GR"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/vikmarpollosalalena/"><i class="fab fa-instagram"></i></a>
               </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
@@ -192,26 +244,10 @@
                   <p>2.00 PM - 8.00 PM</p>
               </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5">
-              <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Hoja informativa</h4>
-          
-              <div class="w-100">
-                  <div class="input-group">
-                      <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                      <div class="input-group-append">
-                          <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
       </div>
-     
-
-
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
+</footer>
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -221,23 +257,13 @@
   <script src="lib/tempusdominus/js/moment.min.js"></script>
   <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
   <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
   <!-- Contact Javascript File -->
   <script src="mail/jqBootstrapValidation.min.js"></script>
   <script src="mail/contact.js"></script>
-
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
-
-
-     
-
-
-
-
-  <script src="java/scriptsx.js"></script>
-
-
+  <script src="js/scriptsx.js"></script>
+  <script src="js/compras.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
