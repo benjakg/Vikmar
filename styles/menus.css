@@ -46,4 +46,8 @@ h1, h4 {
   .fondo-platos{
     background: repeating-linear-gradient(to bottom, #ffffff, #ffffff 20px, #f0f0f0 20px, #f0f0f0 40px);
   }
+  .navbar-nav .nav-link.active {
+    color: orange;
+    font-weight: bold;
+  }
   

@@ -1,0 +1,39 @@
+.subtitulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    
+    padding: 15px; 
+    background-image: url('../img/leñapalcarbon.jpg');
+    background-size: cover;
+    background-position: center; 
+    color: white;
+}
+.menu-subtitulo {
+    text-align: center;
+    margin: 20px 0;
+}
+.nuestro-menu-subtitulo {
+    text-align: center;
+    margin: 20px 0;
+}
+.nuestra-sucursal-subtitulo {
+    text-align: center;
+    margin: 20px 0;
+}
+.titulo-subtitulo {
+    text-align: center;
+    margin: 20px 0;
+}
+.inicioMenu, .inicioMenu2 {
+    width: 80%;
+    height: auto;
+    max-height: 500px;
+    margin: 0 auto; 
+    display: block; 
+}
+.inicioMenu a img, .inicioMenu2 a img {
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+}
