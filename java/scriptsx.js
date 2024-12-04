@@ -5,9 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navbarToggler.addEventListener("click", function () {
     if (navbarCollapse.classList.contains("show")) {
-      navbarCollapse.classList.remove("show"); // Oculta el menú
+      navbarCollapse.classList.remove("show");
     } else {
-      navbarCollapse.classList.add("show"); // Muestra el menú
+      navbarCollapse.classList.add("show");
     }
   });
+});
+
+const navLinks = document.querySelectorAll('.nav-item.nav-link');
+
+const currentPage = window.location.pathname.split('/').pop();
+
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
 });
